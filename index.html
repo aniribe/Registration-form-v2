@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="picture">
+        <h2 id="title">Don't be alone</h2>
+      </div>
+
+      <form id="form" class="form">
+        <!--Title-->
+        <h2>Register With US</h2>
+
+        <!--Username-->
+        <div class="form-control">
+          <input type="text" id="username" placeholder="Username" />
+          <small>Error message</small>
+        </div>
+
+        <!--Email-->
+        <div class="form-control">
+          <input type="text" id="email" placeholder="Email" />
+          <small>Error message</small>
+        </div>
+
+        <!--Password-->
+        <div class="form-control">
+          <input type="password" id="password" placeholder="Password" />
+          <small>Error message</small>
+        </div>
+
+        <!--Confirm Password-->
+        <div class="form-control">
+          <input
+            type="password"
+            id="password2"
+            placeholder="Confirm password"
+          />
+          <small>Error message</small>
+        </div>
+
+        <!--Submit Button-->
+        <button><i class="material-icons right">send</i></button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

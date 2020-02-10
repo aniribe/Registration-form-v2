@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap");
+
+:root {
+  --success-color: #0987a7;
+  --error-color: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #201f1f;
+  font-family: "Indie Flower", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+}
+
+#picture {
+  background: url(images/By_Guy_Powell.jpg);
+  background-size: 200% 100%;
+  width: 360px;
+  height: 520px;
+  top: -20px;
+  left: -15px;
+  position: absolute;
+  box-shadow: 3px 8px 25px 10px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+.container:hover #picture {
+  left: -350px;
+}
+
+#title {
+  color: #0e9bbe;
+  text-align: right;
+  margin: 30px 20px 0 0;
+  position: absolute;
+  right: 0;
+}
+
+.form {
+  background: url(images/By_Guy_Powell.jpg);
+  background-position: right 8% bottom;
+  padding: 30px 40px;
+  width: 320px;
+  position: relative;
+  box-shadow: 3px 5px 25px 5px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form h2 {
+  color: #0e9bbe;
+  text-align: center;
+  margin: 0 0 20px;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  color: #0987a7;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--success-color);
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border: none;
+  border-bottom: 1px solid var(--success-color);
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  margin-top: 5px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  font-family: sans-serif, serif;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background: url(images/By_Guy_Powell.jpg);
+  background-position: right 20% bottom;
+  border: 1px solid #a5a8a8;
+  border-radius: 50%;
+  color: var(--success-color);
+  font-size: 19px;
+  width: 70px;
+  height: 70px;
+  align-self: center;
+  box-shadow: 8px 5px 15px 5px rgba(0, 0, 0, 0.7),
+    inset 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.material-icons {
+  font-size: 30px;
+}
+
+.form button:focus {
+  outline: none;
+}
+
+.form button:hover {
+  box-shadow: 8px 5px 15px 5px rgba(0, 0, 0, 0.7),
+    inset 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form button:active {
+  box-shadow: 8px 5px 15px 5px rgba(0, 0, 0, 0.4),
+    inset 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
